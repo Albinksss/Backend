@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pandas
+openpyxl
+geopandas
+numpy
+pulp
+shapely
+geopy
+scikit-learn
+python-multipart

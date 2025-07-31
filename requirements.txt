@@ -9,3 +9,4 @@ shapely
 geopy
 scikit-learn
 python-multipart
+streamlit

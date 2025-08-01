@@ -36,7 +36,7 @@ def Opti_reseau_Solveur (data,nuts_data, nb_entrepot, maille, Col_NUTS, ponderat
     # nuts_data = pd.read_excel(r'C:\Users\AlbinGEFFRAY\OneDrive - Bartle Business Consulting\Documents\00.Datasupply\API\export_nuts.xlsx')
     
     # Charger le GeoJSON des régions NUTS -> pour l'affichage 
-    geojson_data = gpd.read_file(r'data/NUTS_RG_10M_2024_4326.geojson')
+    geojson_data = gpd.read_file('NUTS_RG_10M_2024_4326.geojson')
     # Filtrer uniquement les NUTS de la maille souhaitée
     liste_maille = ["Pays", "NUTS_1", "NUTS_2", "NUTS_3", "IRIS"]
     rang = liste_maille.index(maille)

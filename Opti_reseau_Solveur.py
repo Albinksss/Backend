@@ -142,7 +142,7 @@ def Opti_reseau_Solveur (data,nuts_data, nb_entrepot, maille, Col_NUTS, ponderat
 
     
      # --- 7. Résolution ---
-    prob.solve(HiGHS())
+    prob.solve()
     print(f"Statut de la résolution : {pulp.LpStatus[prob.status]}")
 
     # --- 8. Résultats ---

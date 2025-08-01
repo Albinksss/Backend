@@ -80,6 +80,15 @@ async def process_file(
     if param3 and poids3 is not None:
         params.append((param3, int(poids3)))
 
+    print("🧠 Param Solveur:", {
+    "nb": Nb_entrepot,
+    "maille": maille,
+    "Col_NUTS": Col_NUTS,
+    "params": params,
+    "df.shape": df.shape,
+    "df2.shape": df2.shape
+    })
+    
     # 🚀 Lancement de l'optimisation
     if optimization == "Opti_Solveur":
         df_opt, df_affectation = Opti_reseau_Solveur(
